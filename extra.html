@@ -1,0 +1,259 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="round-img">
+    <div class="sec5-card">
+        <div class="circle">
+            <img src="./image/i-i1.jpeg" alt="" class="logo">
+             </div>
+             <img src="./image/c2.png" alt="" class="product_img">
+            <div class="content">
+                <h2>COCO-COLO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit? Sit provident doloribus et illum neque delectus voluptate itaque vero.</p>
+                <a href="#">Shop now</a>
+        </div>
+    </div>
+    <div class="sec5-card">
+        <div class="circle">
+            <img src="./image/i-i1.jpeg" alt="" class="logo">
+             </div>
+             <img src="./image/c2.png" alt="" class="product_img">
+            <div class="content">
+                <h2>COCO-COLO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit? Sit provident doloribus et illum neque delectus voluptate itaque vero.</p>
+                <a href="#">Shop now</a>
+        </div>
+    </div>
+    <div class="sec5-card">
+        <div class="circle">
+            <img src="./image/i-i1.jpeg" alt="" class="logo">
+             </div>
+             <img src="./image/c2.png" alt="" class="product_img">
+            <div class="content">
+                <h2>COCO-COLO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit? Sit provident doloribus et illum neque delectus voluptate itaque vero.</p>
+                <a href="#">Shop now</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<style>
+   
+   .round-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        padding-left: 100px;
+        background-color: #151515;
+         background-repeat: no-repeat;
+         background-image: url('./image/bb3.png');
+         background-size: cover;
+        --clr:#E61D2B;
+    }
+    .sec5-card{
+        position: relative;
+        width: 300px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+    }
+    .sec5-card:hover{
+        width: 600px;
+        transition-delay: 0.5s;
+    }
+    .sec5-card .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec5-card .circle::before {
+        content:"";
+        position: absolute;
+        top: 30;
+        left: 2;
+        right: 2;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #191919;
+        border: 8px solid var(--clr);
+        transition: 0.5s, background 0.5s;  
+        transition-delay: 0.75s, 1s; 
+        filter: drop-shadow( 0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+        }
+.sec5-card:hover .circle::before {
+        transition-delay: 0.5s;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px; 
+        background: var(--clr);
+}
+
+.sec5-card .circle .logo {
+        position: relative;
+        width: 200px;
+        height: 200px; 
+        border-radius: 50%;
+        transition: 0.5s; 
+        transition-delay: 0.5s;
+} 
+.sec5-card:hover .circle .logo {
+        transform: scale(0);
+        transition-delay: 0s;
+}
+
+.sec5-card .product_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0) rotate(315deg); 
+        height: 200px; 
+        transition: 0.5s ease-in-out;
+}
+
+.sec5-card:hover .product_img {
+        transition-delay: 0.75s;
+        top: 25%; 
+        left: 75%; 
+        height: 350px; 
+        transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
+.sec5-card .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.sec5-card:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.sec5-card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+    }
+
+.sec5-card .content p {
+    color: #fff;
+}
+.sec5-card.content a {
+    position: relative;
+    color: #151515;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top:10px;
+}
+
+</style> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gallery-container">
+        <h2>Our Gallery</h2>
+        <h1><b>Ice Cream is a smile in a cone</b></h1>
+        <div class="gallery">
+            <div class="gal-1">
+                <img src="./image/love1.jpg" alt="" class="g1">
+                <img src="./image/love2.jpg" alt=""  class="g2">
+
+            </div>
+            <div class="gal-2">
+                 <img src="./image/love3.jpg" alt="" class="g3">
+                <img src="./image/love7.jpg" alt="" class="g4">
+            </div>
+            <div class="gal-3">
+                 <img src="./image/love4.jpg" alt="" class="g5">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .gallery-container{
+        height: 650px;
+        background-color:#7D8D86;
+        width: 100%;
+    }
+    .gallery-container>h2{
+         font-size: 40px;
+        color:red;
+        font-style:italic;
+        padding-left: 550px;
+        margin: 0;
+
+    }
+     .gallery-container>h1{
+        font-size: 40px;
+        color:red;
+        font-style:italic;
+        padding-left: 400px;
+        margin-top: 0;
+     }
+    .gallery-container>.gallery{
+        display: flex;
+        gap: 10px;
+        width: 80%;
+        padding-left: 180px;
+    }
+    .gallery>.gal-1{
+        display: block;
+        width: 30%;
+        height: 250px
+    }
+    .gallery>.gal-1>img{
+        width: 100%;
+        height: 100%;
+    }
+    .gallery>.gal-2{
+        display: block;
+        width: 30%;
+        height: 250px;
+    }
+    .gallery>.gal-2>img{
+        width: 100%;
+        height: 100%;
+    }
+    .gallery>.gal-3{
+        width: 30%;
+        height: 500px;
+    }
+    .gallery>.gal-3>img{
+        width: 100%;
+        height: 100%;
+    }
+</style>

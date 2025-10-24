@@ -1,0 +1,158 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./image/i-i1.jpeg" alt="">
+        </div>
+        <div class="card">
+            <img src="./image/i-i2.jpeg" alt="">
+        </div>
+        <div class="card">
+            <img src="./image/i-i3.jpeg" alt="">
+        </div>
+        <div class="card">
+            <img src="./image/i-i4.jpeg" alt="">
+        </div>
+        <div class="card">
+            <img src="./image/ice.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
+<style>
+    body{
+        /* background-color: black; */
+         background-image: url('./image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+        min-height: 10px;
+        display: flex;
+
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .container{
+        display: flex;
+        width: 620px;
+        height: 340px;
+        gap: 10px;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .card{
+        flex: 1;
+        /* min-width: 40px; */
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: flex 0.5s ease;
+        cursor: pointer;
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* filter: drop-shadow(4px 4px 7px  #222020); */
+        box-shadow:4px 4px 7px black ;
+    }
+    .container:hover .card{
+        flex: 0.8;
+    }
+    .container .card:hover{
+        flex: 5;
+    }
+
+</style> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>No JS Scroll Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      /* scroll-behavior: smooth; */
+    }
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px;
+      -webkit-overflow-scrolling:touch;
+    }
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ice-card {
+      /* scroll-snap-align: start; */
+       width: 300px;
+      height: 350px;
+      /* min-width: 200px; */
+      flex: 0 0 auto;
+      background-color: beige;
+      margin-left: 50px;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Scroll Button */
+ .cone-container-i>img{
+      width: 220px;
+      height: 270px;
+      /* background-color: beige; */
+     text-shadow: 2px 4px 4px rgb(158, 154, 155);
+    }
+    .cone-container-i>h3{
+      text-align: center;
+    }
+
+
+    h2 {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Ice Cream</h2>
+
+  <div class="scroll-container">
+    <div class="ice-card" id="card1">
+      <figure class="cone-container-i img1"><img src="./image/i5.webp" alt=""><h3>Choclate</h3></figure>
+    </div>
+    <div class="ice-card" id="card2">
+       <figure class="cone-container-i img1"><img src="./image/i5.webp" alt=""><h3>Choclate</h3></figure>
+    </div>
+    <div class="ice-card" id="card3">
+       <figure class="cone-container-i img1"><img src="./image/i5.webp" alt=""><h3>Choclate</h3></figure>
+    </div>
+    <div class="ice-card" id="card4">
+      <figure class="cone-container-i img1"><img src="./image/i5.webp" alt=""><h3>Choclate</h3></figure>
+    </div>
+    <div class="ice-card" id="card5">
+       <figure class="cone-container-i img1"><img src="./image/i5.webp" alt=""><h3>Choclate</h3></figure>
+    </div>
+     <div class="ice-card" id="card5">
+       <figure class="cone-container-i img1"><img src="./image/i5.webp" alt=""><h3>Choclate</h3></figure>
+    </div>
+     <div class="ice-card" id="card5">
+       <figure class="cone-container-i img1"><img src="./image/i5.webp" alt=""><h3>Choclate</h3></figure>
+    </div>
+  </div>
+
+
+</body>
+</html>
